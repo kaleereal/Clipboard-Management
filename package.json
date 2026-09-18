@@ -1,0 +1,22 @@
+{
+  "name": "clipboard-management-mobile",
+  "version": "1.0.0",
+  "description": "Offline Android Clipboard Management Mobile Application",
+  "scripts": {
+    "build": "gradle assembleDebug",
+    "build:apk": "gradle assembleDebug",
+    "build:release": "gradle assembleRelease",
+    "test": "gradle test",
+    "clean": "gradle clean"
+  },
+  "keywords": [
+    "android",
+    "clipboard",
+    "jetpack-compose",
+    "material3",
+    "room",
+    "kotlin"
+  ],
+  "author": "",
+  "license": "MIT"
+}
