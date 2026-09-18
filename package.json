@@ -1,22 +1,27 @@
 {
-  "name": "clipboard-management-mobile",
+  "name": "clipboard-management",
+  "private": true,
   "version": "1.0.0",
-  "description": "Offline Android Clipboard Management Mobile Application",
+  "type": "module",
   "scripts": {
-    "build": "gradle assembleDebug",
-    "build:apk": "gradle assembleDebug",
-    "build:release": "gradle assembleRelease",
-    "test": "gradle test",
-    "clean": "gradle clean"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "keywords": [
-    "android",
-    "clipboard",
-    "jetpack-compose",
-    "material3",
-    "room",
-    "kotlin"
-  ],
-  "author": "",
-  "license": "MIT"
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.475.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwind-merge": "^3.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.6",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "tailwindcss": "^4.0.6",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0"
+  }
 }
