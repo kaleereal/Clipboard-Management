@@ -31,7 +31,7 @@ class MainActivity : ComponentActivity() {
     private val analyticsViewModel: AnalyticsViewModel by viewModels()
     private val settingsViewModel: SettingsViewModel by viewModels()
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+    public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         startCaptureService()
@@ -52,6 +52,19 @@ class MainActivity : ComponentActivity() {
                 )
             }
         }
+    }
+
+    public override fun onResume() {
+        super.onResume()
+        startCaptureService()
+    }
+
+    public override fun onPause() {
+        super.onPause()
+    }
+
+    public override fun onDestroy() {
+        super.onDestroy()
     }
 
     private fun startCaptureService() {
